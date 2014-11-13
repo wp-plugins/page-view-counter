@@ -14,7 +14,7 @@ Every page view count for WordPress.
 
 Visit page or post view count by date and display count via shortcode anywhere in page.
 
-### Related Post Ads by http://paratheme.com
+### Page View Counter by http://paratheme.com
 
 <strong>Plugin Features</strong><br />
 
