@@ -1,76 +1,69 @@
-=== Related Post Ads ===
-	Contributors: paratheme
-	Donate link: http://paratheme.com
-	Tags: related post, related posts, related content, related post list, related, similar posts
-	Requires at least: 3.8
-	Tested up to: 4.0
-	Stable tag: 1.0
-	License: GPLv2 or later
-	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+=== Page View Counter ===
+Contributors: paratheme
+Donate link: 
+Tags:  Page View Counter, Page View Count, View Count, visitors count, stats
+Requires at least: 3.8
+Tested up to: 4.0
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-	Display external ads link list by matching related post.
+Every page view count for WordPress.
 
 == Description ==
 
-Related Post Ads allows you to display external post list link. 
-
-<strong>How its works ?</strong>
-
-If you already have some published post then you are ready to use this plugin. these post should assign categories or tags.
-
-And then go "Related Post Ads" create some "New Related Post" as like post or page must have title, feature image, target URL(at bottom) and assign tags or category in which post you want display this "Related Post Ads" and finally "publish"
-
-And thene implement short-code any where content or php file inside loop.
-
-
-
+Visit page or post view count by date and display count via shortcode anywhere in page.
 
 ### Related Post Ads by http://paratheme.com
-
 
 <strong>Plugin Features</strong><br />
 
 * Responsive admin settings.
 * Use via short-code.
-* Use on archive(loop) or content.
-* can use on single post.
+* View count any page.
+
 
 N.B. We are working on this plugin making some awesome feature.
 
 
-
-
 == Installation ==
 
-1. Install as regular WordPress plugin.<br />
-2. Go your plugin setting via WordPress dashboard and find "<strong>Related Post Ads</strong>" activate it.<br />
+1. Install as regular WordPress plugin.
+2. Go your Pluings setting via WordPress Dashboard and activate it.
 
-After activate plugin you will see "Related Post Ads" menu at left side on WordPress dashboard.<br />
+after activating plugin you will see menu "Page View Counter"
 
-short-code inside content for fixed post id you can use anywhere inside content.
+take a test by visiting any page of your website.
 
-`[related_post_ads themes="flat"]`
 
-Short-code inside loop by dynamic post id you can use anywhere inside loop in .php files.
+Short-code by dynamic post/page id you can use anywhere inside .php files(inside loop not required).
 
 `<?php
-echo do_shortcode( '[related_post_ads themes="flat" ]' ); 
+echo do_shortcode( '[pvc_paratheme ]' ); 
 ?>`
 
-`Themes:  flat`
 
 
+Short-code inside content
+
+`[pvc_paratheme ]`
 
 
+                
 
 
 == Screenshots ==
 
-1. screenshot-1
+1. dashboard.
+
+
+
 
 
 == Changelog ==
 
-	= 1.0 =
-	
-    * 11/11/2014 Initial release.
+
+
+= 1.0 =
+* 12/11/2014 - Initial release
+
