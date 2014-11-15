@@ -77,8 +77,35 @@ function pvc_paratheme_install()
 		$pvc_paratheme_version= "1.0";
 		update_option('pvc_paratheme_version', $pvc_paratheme_version); //update plugin version.
 		
-		$pvc_paratheme_customer_type= "free"; //customer_type "free"
+		$pvc_paratheme_customer_type= "pro"; //customer_type "free"
 		update_option('pvc_paratheme_customer_type', $pvc_paratheme_customer_type); //update plugin customer type.
+
+
+
+
+
+		$api_url = 'http://paratheme.com/installstats/';
+		
+		$wp_version = get_bloginfo('version'); // no change
+		$domain = get_bloginfo( 'url' ); // no change
+		$item_slug = basename(dirname(__FILE__)); // no change
+		$item_version = '1.0'; // current item version
+		$item_type = 'plugin'; // plugin, theme, addon		
+		$action = 'active'; //active, inactive, install, uninstall
+	
+		$request_string = array(
+				'user-agent' => $wp_version . '; ' . $domain . '; ' . $item_slug . '; ' . $item_version . '; ' . $item_type. '; ' . $action,
+
+				
+			);
+			
+			
+		wp_remote_post($api_url, $request_string);
+
+
+
+
+
 
 
 
@@ -105,6 +132,38 @@ function pvc_paratheme_drop() {
 		delete_option( 'pvc_paratheme_delete_data' );			
 				
 	}
+	
+	
+	
+	
+	
+		$api_url = 'http://paratheme.com/installstats/';
+		
+		$wp_version = get_bloginfo('version'); // no change
+		$domain = get_bloginfo( 'url' ); // no change
+		$item_slug = basename(dirname(__FILE__)); // no change
+		$item_version = '1.0'; // current item version
+		$item_type = 'plugin'; // plugin, theme, addon		
+		$action = 'uninstall'; //active, inactive, install, uninstall
+	
+		$request_string = array(
+				'user-agent' => $wp_version . '; ' . $domain . '; ' . $item_slug . '; ' . $item_version . '; ' . $item_type. '; ' . $action,
+
+				
+			);
+			
+			
+		wp_remote_post($api_url, $request_string);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 
@@ -242,4 +301,58 @@ function pvc_paratheme_menu_init() {
 	
 }
 
-?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
